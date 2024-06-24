@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bookmyshow</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <link rel="icon" href="img/bookmyshow.png">
+</head>
+<body>
+    <div class="div-container">
+        <section>
+            <nav class="navbar">
+                <!-- Site-Logo + nav-contents -->
+                <ul class="search">
+                <h1 class="site-logo">
+                    <a href="https://in.bookmyshow.com/explore/home/coimbatore" target="_blank">
+                    book<span style="color:#f62929">my</span>show
+                    </a>
+                </h1>
+                    <li>
+                        <form method="get">
+                            <input id="movieName" type="text" class="search-bar" placeholder="Search Movies">
+                        </form>
+                    </li>
+                    <li>
+                        <img id="search-bar-icon" src="img/—Pngtree—vector search icon_4184112.png" 
+                             alt="search.png" height="25px" width="25px">
+                    </li>
+                </ul>
+
+                <ul id="container" class="container">
+                    <li><a href="index.html" class="nav-contents">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-contents">Category</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#" class="nav-contents1">Action</a></li>
+                            <li><a href="#" class="nav-contents1">Comedy</a></li>
+                            <li><a href="#" class="nav-contents1">Drama</a></li>
+                            <li><a href="#" class="nav-contents1">Horror</a></li>
+                            <li><a href="#" class="nav-contents1">Romance</a></li>
+                            <li><a href="#" class="nav-contents1">Sci-Fi</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#aboutus" class="nav-contents">About Us</a></li>
+                    <li><a href="#contactus" class="nav-contents">Contact Us</a></li>
+                    <li>
+                        <select class="location">
+                            <option value="Coimbatore">Coimbatore</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Banglore">Banglore</option>
+                            <option value="Kochi">Kochi</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Delhi">Delhi</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+    <!-- main content area -->
+     <div class="main-content">
+        <h1>Recommended Movies</h1>
+        <div class="slider-contents">
+            <button class="nav-button" id="prev-button">&#10094;</button>
+            <ul class="movies-list" id="slider">
+                <li data-id="1" data-title="Aranmanai-4" data-description="A horror-comedy film directed by Sundar C."
+                 data-url="https://youtu.be/Keck4iVUUdE?si=_ZB9nQdXp7q_Jbmx" 
+                data-image="img/aranmanai 4jpeg.jpeg" class="slide">
+                    <div class="movie-container"><img src="img/aranmanai 4jpeg.jpeg" alt="" class="poster">Aranmanai-4</div></li>
+                <li data-id="2" data-title="Bad Boys:Ride or Die" data-description="An action-packed sequel in the Bad Boys franchise." data-url="https://youtu.be/I_8afk7CvUo?si=zapwAqemCVj41A2p" 
+                data-image="img/badboysrideordie-20240419120821-22854.jpg" class="slide">
+                    <div class="movie-container"><img src="img/badboysrideordie-20240419120821-22854.jpg" alt="" class="poster">Bad Boys:Ride or Die</div></li>
+                <li data-id="3" data-title="Chandu Champion" data-description="A biographical sports drama." data-url="https://youtu.be/IHQQK_Wn5DM?si=HBr4C1-O-vNewGLp" 
+                data-image="img/chandu championjpeg.jpeg" class="slide">
+                    <div class="movie-container"><img src="img/chandu championjpeg.jpeg" alt="" class="poster">Chandu Champion</div></li>
+                <li data-id="4" data-title="Inside Out 2" data-description="The sequel to the animated hit Inside Out." data-url="https://youtu.be/LEjhY15eCx0?si=7sd65uH-X-bDJ7FA" 
+                data-image="img/et00384010-ghaczbslqj-portrait.jpeg" class="slide">
+                    <div class="movie-container"><img src="img/et00384010-ghaczbslqj-portrait.jpeg" alt="" class="poster">Inside Out 2</div></li>
+                <li data-id="5" data-title="Garudan" data-description="A thrilling action movie." data-url="https://youtu.be/B2yC1jpAYvQ?si=HyLwisMj51rEBpDO" 
+                data-image="img/garudanjpeg.jpeg" class="slide">
+                    <div class="movie-container"><img src="img/garudanjpeg.jpeg" alt="" class="poster">Garudan</div></li>
+                <li data-id="6" data-title="PT Sir" data-description="A dramatic film about a dedicated teacher." data-url="https://youtu.be/rlvJHsx6N60?si=131wEzemF8EExc8s" 
+                data-image="img/ptsirjpeg.jpeg" class="slide">
+                    <div class="movie-container"><img src="img/ptsirjpeg.jpeg" alt="" class="poster">PT Sir</div></li>
+                <li data-id="7" data-title="Maharaja" data-description="A period drama set in ancient India." data-url="https://youtu.be/UsW95hX8GTQ?si=APWxMkeTzMd5ICVO" 
+                data-image="img/vjsjpeg.jpeg" class="slide">
+                    <div class="movie-container"><img src="img/vjsjpeg.jpeg" alt="" class="poster">Maharaja</div></li>   
+            </ul>
+            <button class="nav-button" id="next-button">&#10095;</button>
+        </div>
+     </div>
+     <div class="space"><br></div>
+     <div class="paytm"><marquee scrollamount="13">Book tickets using paytm for exiting cashback <a style="text-decoration: none; color: white;" href="https://paytm.com/coupon-detail/v1/p/here-is-your-rs-300-cashback-movie-voucher-DEAHERE-IS-YOURPAYT47D69218E">Click here!!!</a></marquee></div>
+     <div class="About-Us" id="aboutus">
+        <pre class="text-about">
+<span style="font-size: 30px; font-weight: bold;">About Us</span>
+
+Welcome to Bookmyshow
+
+ We're passionate about bringing the magic of movies to your fingertips. Whether you're a cinephile, a casual moviegoer, or someone looking for a fun night out, we've got you covered.
+ Our platform is designed to make your movie-going experience seamless and enjoyable.
+
+Our Mission
+
+ Our mission is simple: to connect movie lovers with the films they love. We strive to provide a reliable and user-friendly platform that not only
+ simplifies ticket booking but also enriches your movie-watching experience.Get in Touch!
+        </pre>
+     </div>
+     <div class="Contact-Us" id="contactus">
+        <p class="text-contact">
+<span style="font-size: 30px; font-weight: bold;">Contact Us</span><br>
+    
+    Connect with Us on Social Media:<br>
+    Stay updated with the latest news and promotions by following us on social media.<br>
+    <a href="https://facebook.com/bookmyshow" target="_blank"><img src="img/fb.png" height="25px" width="25px"></a>&nbsp;
+    <a href="https://twitter.com/bookmyshow" target="_blank"><img src="img/twitter-x-logo-42556.jpg" height="25px" width="25px"></a>&nbsp;
+    <a href="https://instagram.com/bookmyshow" target="_blank"><img src="img/insta.png" height="25px" width="25px"></a>&nbsp;
+    
+<br>
+    
+    Thank you for choosing Bookmyshow! We look forward to serving you.
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+    

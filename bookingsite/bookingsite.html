@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bookmyshow</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='bookscript.css'>
+    <link rel="icon" href="img/bookmyshow.png">
+</head>
+<body>
+    <div class="div-container">
+        <section>
+            <nav class="navbar">
+                <ul class="search">
+                    <h1 class="site-logo">
+                        <a href="https://in.bookmyshow.com/explore/home/coimbatore" target="_blank">
+                            book<span style="color:#f62929">my</span>show
+                        </a>
+                    </h1>
+                    <li>
+                        <form method="get">
+                            <input id="movieName" type="text" class="search-bar" placeholder="Search Movies">
+                        </form>
+                    </li>
+                    <li>
+                        <img id="search-bar-icon" src="img/—Pngtree—vector search icon_4184112.png" 
+                             alt="search.png" height="25px" width="25px">
+                    </li>
+                </ul>
+                <ul id="container" class="container">
+                    <li><a href="index.html" class="nav-contents">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-contents">Category</a>
+                        <ul class="dropdown-content">
+                            <li><a href="#" class="nav-contents1">Action</a></li>
+                            <li><a href="#" class="nav-contents1">Comedy</a></li>
+                            <li><a href="#" class="nav-contents1">Drama</a></li>
+                            <li><a href="#" class="nav-contents1">Horror</a></li>
+                            <li><a href="#" class="nav-contents1">Romance</a></li>
+                            <li><a href="#" class="nav-contents1">Sci-Fi</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about-us" class="nav-contents">About Us</a></li>
+                    <li><a href="#contact-us" class="nav-contents">Contact Us</a></li>
+                    <li>
+                        <select class="location">
+                            <option value="Coimbatore">Coimbatore</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Banglore">Banglore</option>
+                            <option value="Kochi">Kochi</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Delhi">Delhi</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+    <div class="main-content">
+        <div class="movie-details">
+            <h1 id="movie-title"></h1>
+            <img id="movie-image" src="" alt="Movie Image">
+            <a id="movie-url" href="" target="_blank">
+                <img src="img/youtube.jpeg" height="40px" width="40px" class="ytube">
+            </a>
+            <p id="movie-description"></p>
+        </div>
+        <div class="booking-section">
+            <label for="show-date">Select Date:</label>
+            <input type="date" id="show-date">
+            <div class="show-timings">
+                <h2>Select Show Timing</h2>
+                <div class="timings">
+                    <label class="time-label">
+                        <input type="radio" name="show-time" value="10:00 AM">
+                        <span class="time">10:00 AM</span>
+                    </label>
+                    <label class="time-label">
+                        <input type="radio" name="show-time" value="1:00 PM">
+                        <span class="time">1:00 PM</span>
+                    </label>
+                    <label class="time-label">
+                        <input type="radio" name="show-time" value="4:00 PM">
+                        <span class="time">4:00 PM</span>
+                    </label>
+                    <label class="time-label">
+                        <input type="radio" name="show-time" value="7:00 PM">
+                        <span class="time">7:00 PM</span>
+                    </label>
+                    <label class="time-label">
+                        <input type="radio" name="show-time" value="10:00 PM">
+                        <span class="time">10:00 PM</span>
+                    </label>
+                </div>
+            </div>
+            <h2>Theaters</h2>
+            <select id="theater-select">
+                <option value="Theater 1">CinePolis</option>
+                <option value="Theater 2">IMAX</option>
+                <option value="Theater 3">FunMall</option>
+            </select>
+            
+            <div class="seats-container">
+                <h2>Select Seats</h2>
+                <hr class="screen"><br><br>
+                <div class="seats">
+
+                    <div class="row">
+                        <button class="seat">A1</button>
+                        <button class="seat">A2</button>
+                        <button class="seat">A3</button>
+                        <button class="seat">A4</button>
+                        &nbsp;
+                        <button class="seat">A5</button>
+                        <button class="seat">A5</button>
+                        <button class="seat">A6</button>
+                        <button class="seat">A7</button>
+                    </div>
+                    
+                    <div class="row">
+                        <button class="seat">B1</button>
+                        <button class="seat">B2</button>
+                        <button class="seat">B3</button>
+                        <button class="seat">B4</button>
+                        &nbsp;
+                        <button class="seat">B5</button>
+                        <button class="seat">B6</button>
+                        <button class="seat">B7</button>
+                        <button class="seat">B8</button>
+                    </div>
+                    <div class="row">
+                        <button class="seat">C1</button>
+                        <button class="seat">C2</button>
+                        <button class="seat">C3</button>
+                        <button class="seat">C4</button>
+                        &nbsp;
+                        <button class="seat">C5</button>
+                        <button class="seat">C6</button>
+                        <button class="seat">C7</button>
+                        <button class="seat">C8</button>
+                    </div>
+                    <div class="row">
+                        <button class="seat">D1</button>
+                        <button class="seat">D2</button>
+                        <button class="seat">D3</button>
+                        <button class="seat">D4</button>
+                        &nbsp;
+                        <button class="seat">D5</button>
+                        <button class="seat">D6</button>
+                        <button class="seat">D7</button>
+                        <button class="seat">D8</button>
+                    </div>
+                    <div class="row">
+                        <button class="seat">E1</button>
+                        <button class="seat">E2</button>
+                        <button class="seat">E3</button>
+                        <button class="seat">E4</button>
+                        &nbsp;
+                        <button class="seat">E5</button>
+                        <button class="seat">E6</button>
+                        <button class="seat">E7</button>
+                        <button class="seat">E8</button>
+                    </div>
+                    <div class="row">
+                        <button class="seat">F1</button>
+                        <button class="seat">F2</button>
+                        <button class="seat">F3</button>
+                        <button class="seat">F4</button>
+                        &nbsp;
+                        <button class="seat">F5</button>
+                        <button class="seat">F6</button>
+                        <button class="seat">F7</button>
+                        <button class="seat">F8</button>
+                    </div><div class="row">
+                        <button class="seat">G1</button>
+                        <button class="seat">G2</button>
+                        <button class="seat">G3</button>
+                        <button class="seat">G4</button>
+                        &nbsp;
+                        <button class="seat">G5</button>
+                        <button class="seat">G6</button>
+                        <button class="seat">G7</button>
+                        <button class="seat">G8</button>
+                    </div>
+                    <div class="row">
+                        <button class="seat">H1</button>
+                        <button class="seat">H2</button>
+                        <button class="seat">H3</button>
+                        <button class="seat">H4</button>
+                        &nbsp;
+                        <button class="seat">H5</button>
+                        <button class="seat">H6</button>
+                        <button class="seat">H7</button>
+                        <button class="seat">H8</button>
+                    </div>
+                </div>
+            </div>
+            <div class="total-amount">
+                Total Amount: ₹<span id="total-amount">0</span>
+            </div>
+            <button class="payment-button">Proceed to Payment</button>
+        </div>
+    </div>
+    <div class="About-Us" id="about-us">
+        <pre class="text-about">
+<span style="font-size: 30px; font-weight: bold;">About Us</span>
+
+Welcome to Bookmyshow
+
+ We're passionate about bringing the magic of movies to your fingertips. Whether you're a cinephile, a casual moviegoer, or someone looking for a fun night out, we've got you covered.
+ Our platform is designed to make your movie-going experience seamless and enjoyable.
+
+Our Mission
+
+ Our mission is simple: to connect movie lovers with the films they love. We strive to provide a reliable and user-friendly platform that not only
+ simplifies ticket booking but also enriches your movie-watching experience.Get in Touch!
+        </pre>
+     </div>
+     <div class="Contact-Us" id="contact-us">
+        <p class="text-contact">
+<span style="font-size: 30px; font-weight: bold;">Contact Us</span><br>
+    
+    Connect with Us on Social Media:<br>
+    Stay updated with the latest news and promotions by following us on social media.<br>
+    <a href="https://facebook.com/bookmyshow" target="_blank"><img src="img/fb.png" height="25px" width="25px"></a>&nbsp;
+    <a href="https://twitter.com/bookmyshow" target="_blank"><img src="img/twitter-x-logo-42556.jpg" height="25px" width="25px"></a>&nbsp;
+    <a href="https://instagram.com/bookmyshow" target="_blank"><img src="img/insta.png" height="25px" width="25px"></a>&nbsp;
+    
+<br>
+    
+    Thank you for choosing Bookmyshow! We look forward to serving you.
+        </p>
+    </div>
+    <script src="bookscript.js"></script>
+</body>
+</html>
